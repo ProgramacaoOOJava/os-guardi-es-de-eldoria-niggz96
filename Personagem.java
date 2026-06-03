@@ -1,4 +1,4 @@
-public class Personagem { // classe base para os personagens do jogo
+public abstract class Personagem { // classe abstrata para representar um personagem em um jogo de RPG, com atributos e métodos comuns a todos os personagens
     String nome; // nome do personagem
     String classe; // classe do personagem (guerreiro, mago, arqueiro, etc.)
     int nivel; // nível do personagem
@@ -21,5 +21,6 @@ public class Personagem { // classe base para os personagens do jogo
         System.out.println("Pontos de Vida: " + pontosDeVida); // exibe os pontos de vida do personagem
         System.out.println("Poder Base: " + poderBase); // exibe o poder base do personagem
     }
-}
 
+    public abstract void usarHabilidadeEspecial(); // método abstrato para representar o ataque do personagem, que deve ser implementado pelas subclasses específicas de personagens
+}
